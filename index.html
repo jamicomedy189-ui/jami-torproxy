@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jami Network TorProxy - Secure & Anonymous</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #0b0d19;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        /* Header / Navbar */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            background: rgba(11, 13, 25, 0.9);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid #1e2342;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: bold;
+            font-size: 1.2rem;
+            color: #58a6ff;
+        }
+
+        nav a {
+            color: #a0a6c0;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 0.95rem;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffffff;
+        }
+
+        .btn-get-started {
+            background: linear-gradient(90deg, #6366f1, #8b5cf6);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            background: radial-gradient(circle at top, #1a1e3a 0%, #0b0d19 70%);
+        }
+
+        .tag {
+            display: inline-block;
+            background: rgba(99, 102, 241, 0.15);
+            border: 1px solid #6366f1;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            color: #a5b4fc;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 15px;
+            background: linear-gradient(90deg, #ffffff, #8b5cf6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            color: #94a3b8;
+            max-width: 600px;
+            margin: 0 auto 30px;
+            font-size: 1.05rem;
+        }
+
+        .btn-download {
+            background: linear-gradient(90deg, #3b82f6, #6366f1);
+            color: white;
+            padding: 14px 32px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
+            transition: 0.3s;
+        }
+
+        .btn-download:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(59, 130, 246, 0.6);
+        }
+
+        /* Security Proofs Section */
+        .proofs-section {
+            padding: 60px 8%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section-title h2 {
+            font-size: 2rem;
+            color: #f8fafc;
+        }
+
+        .section-title p {
+            color: #64748b;
+        }
+
+        .proof-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+        }
+
+        .proof-card {
+            background: #13172e;
+            border: 1px solid #232946;
+            border-radius: 12px;
+            padding: 20px;
+            transition: 0.3s;
+        }
+
+        .proof-card:hover {
+            border-color: #6366f1;
+            transform: translateY(-5px);
+        }
+
+        .proof-card h3 {
+            font-size: 1.1rem;
+            color: #a5b4fc;
+            margin-bottom: 8px;
+        }
+
+        .proof-card p {
+            font-size: 0.88rem;
+            color: #94a3b8;
+            margin-bottom: 15px;
+        }
+
+        .proof-card img {
+            width: 100%;
+            border-radius: 8px;
+            border: 1px solid #1e2342;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px;
+            border-top: 1px solid #1e2342;
+            color: #64748b;
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            🧅 Jami Network TorProxy
+        </div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#proofs">Security Proofs</a>
+            <a href="#download">Download</a>
+        </nav>
+        <a href="#download" class="btn-get-started">Get Started</a>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="tag">● Secure • Anonymous • Free</div>
+        <h1>Jami Network TorProxy</h1>
+        <p>Combine the power of Tor and local proxy for maximum privacy, freedom, and zero-leak protection.</p>
+        <a href="#download" class="btn-download" id="download">📥 Download App</a>
+    </section>
+
+    <!-- Security Proofs Section -->
+    <section class="proofs-section" id="proofs">
+        <div class="section-title">
+            <h2>Verified Security Proofs</h2>
+            <p>100% Transparent, Standalone, and Non-Malicious Architecture</p>
+        </div>
+
+        <div class="proof-grid">
+            <!-- Proof 1 -->
+            <div class="proof-card">
+                <h3>1. Nmap Port Scan</h3>
+                <p>Zero open ports on local scan, ensuring no backend vulnerabilities.</p>
+                <img src="nmap-scan-proof.jpg" alt="Nmap Scan Proof">
+            </div>
+
+            <!-- Proof 2 -->
+            <div class="proof-card">
+                <h3>2. Zero Permission</h3>
+                <p>No sensitive runtime permissions required for complete user privacy.</p>
+                <img src="zero-permission-proof.jpg" alt="Zero Permission Proof">
+            </div>
+
+            <!-- Proof 3 -->
+            <div class="proof-card">
+                <h3>3. Connection Status</h3>
+                <p>Active SOCKS5 local proxy connected seamlessly with Tor Network.</p>
+                <img src="proxy-connection-status.jpg" alt="Proxy Connection Proof">
+            </div>
+
+            <!-- Proof 4 -->
+            <div class="proof-card">
+                <h3>4. Optimized Size</h3>
+                <p>Lightweight footprint (~20 MB) with zero bloatware.</p>
+                <img src="app-storage-footprint.jpg" alt="Storage Size Proof">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2026 Jami Network TorProxy. All rights reserved.
+    </footer>
+
+</body>
+</html>
